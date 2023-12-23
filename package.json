@@ -14,7 +14,7 @@
     "start": "NODE_ENV=production wrangler pages dev ./public",
     "start2": "wrangler pages dev --compatibility-date=2023-12-23 ./public",
     "typecheck": "tsc -p . --noEmit",
-    "release": "pnpm build:prod && wrangler pages publish ./public"
+    "deploy": "pnpm build:prod && wrangler pages deploy --project-name remix-payload-blog ./public"
   },
   "dependencies": {
     "@remix-run/cloudflare": "^2.4.1",
